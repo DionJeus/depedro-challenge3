@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\GAMING DESKTOP\Downloads\rock-paper-scissors-master\images\favicon-32x32.png">
+  
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="style.js" defer></script>
+  
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>
+        <span>Rock</span>
+        <span>Paper</span>
+        <span>Scissors</span>
+      </h1>
+      <div class="score-container">
+        <h4>Score</h4>
+        <p id="score">0</p>
+      </div>
+    </header>
+
+    <main  id="main">
+      <button class="btn-circle btn-paper choice-click" data-choice="paper">
+        <span class="wrapper">
+          <img src="images\icon-paper.svg" alt="paper-icon"/>
+        </span>        
+      </button>
+
+      <button class="btn-circle btn-scissors choice-click" data-choice="scissors">
+        <span class="wrapper">
+          <img src="images/icon-scissors.svg" alt="scissors-icon"/>
+        </span>        
+      </button>
+
+      <button class="btn-circle btn-rock choice-click" data-choice="rock">
+        <span class="wrapper">
+          <img src="images\icon-rock.svg" alt="rock-icon"/>
+        </span>        
+      </button>
+    </main>    
+    
+    <button class="btn-rules" id="rules">Rules</button>    
+
+  </div>
+
+  <div class="rules-container" id="modal">
+    <img src="C:\Users\jeric\Downloads\rock-paper-scissors-master\images\image-rules.svg" alt="rules" />
+    <button id="close-modal"><img src="C:\Users\jeric\Downloads\rock-paper-scissors-master\images\icon-close.svg" alt="close button"/></button>
+</div>
+
+  <div class="selection" id="selection">
+    <div class="user-selection">
+      <h2>You picked</h2>
+      <button class="btn-circle btn-paper" id="user_select">
+        <span class="wrapper">
+          <img src="images/icon-paper.svg" alt="paper-icon"/>
+        </span>          
+      </button>
+    </div>
+
+    <div class="result-section">
+      <h1>YOU <span id="result">win</span></h1>
+      <button id="reset">Play again</button>
+    </div>
+
+    <div class="computer-selection">
+      <h2>The House picked</h2>
+      <button class="btn-circle btn-paper" id="computer_select">
+        <span class="wrapper">
+          <img src="images/icon-paper.svg" alt="paper-icon"/>
+        </span>
+        
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
